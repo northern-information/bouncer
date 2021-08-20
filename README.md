@@ -21,7 +21,7 @@ As a member of Sidereal Lobby, I need to sync Octatracks with my bandmate.
   |
   | -- lobby/           -- the shared OT project directory
   |     \ audio/        -- audio files synced via bouncer.sh
-  |     | projects/     -- project files synced via bouncer.sh
+  |     | *             -- project files synced via bouncer.sh
   |
   | --- ryan/           -- .gitignored
   |     \ *.*           -- fodder
