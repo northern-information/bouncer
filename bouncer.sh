@@ -5,9 +5,6 @@ function div() {
 }
 
 div
-div
-div
-div
 
 cat <<"EOT"
                                 ____                     ____                                 
@@ -86,8 +83,8 @@ read a
 
 case $a in
   1)
-    rsync -rtuv /$octapath/* /$lobbypath
-    rsync -rtuv /$lobbypath/* /$octapath
+    rsync -rtuv --checksum /$octapath/* /$lobbypath
+    rsync -rtuv --checksum /$lobbypath/* /$octapath
     says "Enjoy your stay at Sidereal Lobby, $user."
     exit 1
     ;;
