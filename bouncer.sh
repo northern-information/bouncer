@@ -32,9 +32,9 @@ fi
 case $1 in
   r)
     authorized=1
-    user="Professor Laws"
-    octapath="/enter/your/path/here/ryan"
-    lobbypath="/enter/your/path/here/ryan"
+    user="Mister Sparkle"
+    octapath="/media/octatrack/LOBBY"
+    lobbypath="/home/license/Dropbox/sidereal-lobby/lobby"
     ;;
   t)
     authorized=1
