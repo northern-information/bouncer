@@ -33,13 +33,13 @@ case $1 in
   r)
     authorized=1
     user="Mister Sparkle"
-    octapath="/media/octatrack/LOBBY"
+    octapath="/media/octatrack/BELLHOP"
     lobbypath="/home/license/Dropbox/sidereal-lobby/bouncer"
     ;;
   t)
     authorized=1
     user="Professor Etters"
-    octapath="/Volumes/OCTATRACK/LOBBY"
+    octapath="/Volumes/OCTATRACK/BELLHOP"
     lobbypath="/Users/mbp/Dropbox/People/sidereal/bouncer"
     ;;
   *)
