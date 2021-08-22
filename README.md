@@ -1,5 +1,21 @@
 # bouncer
 
+## Structure
+
+ - `sidereal` (dropbox top level shared can be named whatever you want)
+  - `bouncer/` (the shared OT audio)
+   - `bouncer.sh` (sync script)
+   - `readme.md` (this file)
+   - `AUDIO/` (audio files synced via bouncer.sh)
+    - `chains` (profit)
+    - `fodder` (grab bag)
+    - `stems` (stems designed to work together)
+     - `group-b`
+     - `group-b`
+     - `group-c`
+
+## Purpose
+
 As a member of Sidereal Lobby, I need to sync Octatracks .wavs with my bandmate.
 
  1. I expect to run a shell script that does all the syncing for me.
@@ -9,37 +25,5 @@ As a member of Sidereal Lobby, I need to sync Octatracks .wavs with my bandmate.
  5. I expect there to be a single directory in Dropbox called `bouncer`.
  6. I expect the shell script and all Octatrack blessed files to reside in the same directory on Dropbox.
  7. I expect to be able to tell the shell script who I am so it knows my Octatrack's path.
-
-# The Architecture of Sidereral Lobby
-
-```
-| sidereal              -- dropbox top level shared can be named whatever you want
-  \  
-  | -- bouncer.sh       -- sync script
-  |
-  | -- readme.md        -- this file
-  |
-  | -- bouncer/         -- the shared OT audio
-  |     \ AUDIO/        -- audio files synced via bouncer.sh
-  |
-  | --- ryan/           -- .gitignored
-  |     \ *.*           -- fodder
-  |
-  | --- tyler/          -- .gitignored
-  |     \ ableton/      -- main ableton files for stems and sketches
-  |     | compost/      -- whatever samples and garbage i make and want to share
-  |     | sketches/     -- typically bounced ableton projects for reference
-  |     | stems/        -- ready for octatrack or daw importing
-  |     
-  | --- images/         -- .gitignored
-  |      \ *.jpg
-  |      | *.png
-  |      | *.psd
-  |      | *.mp4
-  |      | (etc)
-  |
-  | --- releases/       -- .gitignored
-        \ 0000 0000     -- (spontaneous noise album)
-        | 0000 0001     -- (current)
-        | 0000 0010     -- (dub techno)
-```
+ 8. I expect this to work in concert with [bellhop](https://github.com/northern-information/bellhop)
+ 9. I expect bouncer to only transfer `.wav` files and directories. No `.ot` files!
