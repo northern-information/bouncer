@@ -69,8 +69,6 @@ fi
 if [ -d  "$lobbypath" ]; then
   says "Let's also du -hs $lobbypath:"
   du -hs $lobbypath
-  says "And diff $octapath $lobbypath:"
-  diff $octapath $lobbypath
   div
 else
   says "The shared lobby is expected at $lobbypath but sadly it cannot be accessed right now." 
