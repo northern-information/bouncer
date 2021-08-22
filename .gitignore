@@ -1,5 +1,4 @@
 .DS_Store
-images/*
-ryan/*
-tyler/*
-releases/*
+._*
+AUDIO/*
+*.wav

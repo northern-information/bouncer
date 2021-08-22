@@ -1,12 +1,12 @@
 # bouncer
 
-As a member of Sidereal Lobby, I need to sync Octatracks with my bandmate.
+As a member of Sidereal Lobby, I need to sync Octatracks .wavs with my bandmate.
 
  1. I expect to run a shell script that does all the syncing for me.
  2. I expect the shell script to use `rsync`.
  3. I expect my Octatrack to be plugged in and in USB mode.
- 4. I expect each Octatrack to have a top level directory called `lobby`.
- 5. I expect there to be a single directory in Dropbox called `lobby`.
+ 4. I expect each Octatrack to have a top level directory called `LOBBY`.
+ 5. I expect there to be a single directory in Dropbox called `bouncer`.
  6. I expect the shell script and all Octatrack blessed files to reside in the same directory on Dropbox.
  7. I expect to be able to tell the shell script who I am so it knows my Octatrack's path.
 
@@ -19,9 +19,8 @@ As a member of Sidereal Lobby, I need to sync Octatracks with my bandmate.
   |
   | -- readme.md        -- this file
   |
-  | -- lobby/           -- the shared OT project directory
-  |     \ audio/        -- audio files synced via bouncer.sh
-  |     | *             -- project files synced via bouncer.sh
+  | -- bouncer/         -- the shared OT audio
+  |     \ AUDIO/        -- audio files synced via bouncer.sh
   |
   | --- ryan/           -- .gitignored
   |     \ *.*           -- fodder

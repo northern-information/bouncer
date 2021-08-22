@@ -34,13 +34,13 @@ case $1 in
     authorized=1
     user="Mister Sparkle"
     octapath="/media/octatrack/LOBBY"
-    lobbypath="/home/license/Dropbox/sidereal-lobby/lobby"
+    lobbypath="/home/license/Dropbox/sidereal-lobby/bouncer"
     ;;
   t)
     authorized=1
     user="Professor Etters"
     octapath="/Volumes/OCTATRACK/LOBBY"
-    lobbypath="/Users/mbp/Dropbox/People/sidereal/lobby"
+    lobbypath="/Users/mbp/Dropbox/People/sidereal/bouncer"
     ;;
   *)
     authorized=0
@@ -77,14 +77,14 @@ else
   exit 1
 fi
 
-says "Do you wish to proceed with rsync? 1 = yes, * = no."
+says "Do you wish to proceed with rsync? y/n"
 
 read a
 
 case $a in
-  1)
-    rsync -rtuv --checksum /$octapath/* /$lobbypath
-    rsync -rtuv --checksum /$lobbypath/* /$octapath
+  "y")
+    rsync -zarv --checksum --include="*/" --include="*.wav" --exclude="*" /$octapath/* /$lobbypath
+    rsync -zarv --checksum --include="*/" --include="*.wav" --exclude="*" /$lobbypath/* /$octapath
     says "Enjoy your stay at Sidereal Lobby, $user."
     exit 1
     ;;
