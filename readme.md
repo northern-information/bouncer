@@ -3,7 +3,7 @@
 ## Structure
 
  - `sidereal` (dropbox top level shared can be named whatever you want)
-   - `bouncer/` (the shared OT audio)
+   - `bouncer/` (the shared OT audio - this directory maps to `OCTATRACK/LOBBY`)
      - `bouncer.sh` (sync script)
      - `readme.md` (this file)
      - `AUDIO/` (audio files synced via bouncer.sh)
