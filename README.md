@@ -3,16 +3,17 @@
 ## Structure
 
  - `sidereal` (dropbox top level shared can be named whatever you want)
-  - `bouncer/` (the shared OT audio)
-   - `bouncer.sh` (sync script)
-   - `readme.md` (this file)
-   - `AUDIO/` (audio files synced via bouncer.sh)
-    - `chains` (profit)
-    - `fodder` (grab bag)
-    - `stems` (stems designed to work together)
-     - `group-b`
-     - `group-b`
-     - `group-c`
+   - `bouncer/` (the shared OT audio)
+     - `bouncer.sh` (sync script)
+     - `readme.md` (this file)
+     - `AUDIO/` (audio files synced via bouncer.sh)
+       - `chains` (profit)
+       - `fodder` (grab bag)
+       - `stems` (stems designed to work together)
+         - `group-b`
+         - `group-b`
+         - `group-c`
+         - `...`
 
 ## Purpose
 
