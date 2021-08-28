@@ -1,5 +1,7 @@
 # bouncer
 
+## Thee Mighty Dumpster Fire (testing Discord integration)
+
 ## Structure
 
  - `sidereal` (dropbox top level shared can be named whatever you want)
